@@ -1,0 +1,53 @@
+@import "./mixins.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.wrapper {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+.configurable-carousel {
+  background-color: rgb(231, 231, 231);
+  padding: 1rem;
+}
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+
+h1.heading {
+  font-size: 1.5rem;
+  @include from-small-screen {
+    font-size: 1.6rem;
+  }
+  @include from-medium-screen {
+    font-size: 1.8rem;
+  }
+  @include from-large-screen {
+    font-size: 2rem;
+  }
+}
+h2.heading {
+  font-size: 1.1rem;
+  @include from-small-screen {
+    font-size: 1.2rem;
+  }
+  @include from-medium-screen {
+    font-size: 1.3rem;
+  }
+  @include from-large-screen {
+    font-size: 1.5rem;
+  }
+}
+
+@import "./components/Carousel/style.scss";
+@import "./components/dataStyle.scss";
+@import "./components/Navbar/style.scss";

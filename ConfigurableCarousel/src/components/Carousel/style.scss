@@ -1,0 +1,62 @@
+.carousel {
+  position: relative;
+  margin: 1.25rem 0;
+  &__navigation-arrow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 1.875rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.918);
+    opacity: 0.5;
+    z-index: 1;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+  }
+  &__content {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__slide {
+    width: 100%;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: bottom;
+    overflow: hidden;
+  }
+  &__dot {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.918);
+    opacity: 0.5;
+    border: 0.1px solid rgb(190, 190, 190);
+    border-radius: 50%;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.3s;
+    &--active {
+      opacity: 1;
+    }
+  }
+  &__dot-container {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+}

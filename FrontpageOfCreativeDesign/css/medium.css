@@ -1,0 +1,27 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/wolf-1341881_1920.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+}
+
+.hero-text h1 {
+    font-size: 54px;
+}
+
+.hero-text p {
+    font-size: 27px;
+}
+
+.products-hero-text h3 {
+    font-size: 40px;
+}
+
+.products-hero-text p {
+    font-size: 27px;
+}
+
+.products-hero {
+    display: inline-block;
+    width:50%;
+}

@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 241, 241);
+}
+
+.main-container {
+   width: 600px;
+   margin: 80px auto;
+   text-align: center;
+   background: linear-gradient(to right, rgb(74, 177, 236), rgb(5, 120, 187));
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px rgb(124, 124, 124);
+   border:none;
+}
+
+h1 {
+    color: white;
+    padding-top:30px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    padding:20px;
+}
+
+h4 {
+    padding:15px;
+}
+
+.input-tasks {
+    margin:25px;
+    padding: 8px;
+    width: 400px;
+    border-radius: 5px;
+    border:none;
+}
+
+.input-tasks:focus {
+   outline:none;
+   box-shadow: 1px 1px 3px rgb(4, 96, 150);
+}
+
+.input-info {
+    margin-top:20px;
+    color:rgb(221, 221, 221);
+}
+
+.add {
+    border:none;
+    padding:9px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.add:focus {
+    outline:none;
+    box-shadow: 1px 1px 3px rgb(4, 96, 150);
+}
+
+.list-container {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.list-info {
+    margin-bottom:20px;
+    color:rgb(133, 133, 133);
+}
+
+ul {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.tasks-container {
+    display: flex;
+    background-color: rgb(238, 236, 236);
+    border-radius: 1px;
+    text-align: left;
+    width:570px;
+    margin-left: 15px;
+}
+
+.tasks-container p {
+    flex: 3;
+    padding:15px;
+}
+
+.tasks-buttons {
+    display:flex;
+}
+
+.tasks-buttons button {
+    border: none;
+    height:100%;
+    padding:5px 15px;
+    text-transform: uppercase;
+    background-color: rgb(238, 236, 236);
+    cursor: pointer;
+    border:1px solid transparent;
+    transition: background-color .3s;
+}
+
+.tasks-buttons button:focus {
+    outline:none;
+    border:1px solid rgb(228, 228, 228);
+}
+
+.button-check {
+    color:rgb(53, 153, 219);
+}
+
+.button-edit {
+    color:rgb(58, 179, 64);
+}
+
+.button-close {
+    color: rgb(212, 84, 84);
+}
+
+.tasks-buttons button:hover, .add:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+button[disabled]:hover {
+    background-color: rgb(238, 236, 236);
+}
+
+.edition-container {
+    position: fixed;
+    bottom:5px;
+    left:calc(50vw - 300px);
+    width: 600px;
+    margin: 0px auto;
+    display:none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    background-color: rgb(83, 86, 88);
+}
+
+.edition-container button {
+    border:none;
+    width:200px;
+    padding:7px;
+    border-radius: 3px;
+    margin:0px 15px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+}
+
+.input-edit {
+    width:520px;
+    margin:25px;
+    padding: 8px;
+    border:none;
+    border-radius: 5px;
+}
+
+.input-edit:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px rgb(181, 181, 182);
+}
+
+.button-accept {
+    margin-top:10px;
+    background-color: rgb(5, 120, 187);
+    color:white;
+}
+
+.button-cancel {
+    background-color: rgb(238, 236, 236);
+}
+
+.checked {
+    text-decoration: line-through;
+    font-style: italic;
+    color:rgb(133, 133, 133);
+}
+
+.checked-icon {
+    color:rgb(133, 133, 133);
+}
+
+.show {
+    display:block;
+}

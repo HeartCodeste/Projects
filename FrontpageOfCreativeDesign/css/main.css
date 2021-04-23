@@ -1,0 +1,254 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    position:sticky;
+    top:0;
+    z-index: 1;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    background-image:linear-gradient(rgb(170, 169, 169),rgb(216, 216, 216));
+}
+
+.nav-click {
+    margin-right:100%;
+}
+
+.nav-click button {
+    position:absolute;
+    left:0;
+    padding:15px;
+    background: none;
+    border: none;
+    font-size:30px;
+    cursor:pointer;
+    transition: color .3s, transform .3s;
+}
+
+.nav-click button:hover {
+    color:rgb(0, 140, 255);
+    cursor: pointer;
+}
+
+.menu-container {
+    position: absolute;
+    left: -200px;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(236, 236, 236, .8);
+    transition: transform .3s;
+}
+
+.menu-container li {
+    margin-left: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color .3s;
+    list-style: none;
+}
+
+button:focus {
+    outline:none;
+}
+
+.menu-item {
+    display:inline-block;
+    line-height:60px;
+    margin:0 30px;
+    text-transform: uppercase;
+    color:rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.menu-item a {
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.menu-item a:link {
+    text-decoration: none;
+    color:rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.menu-item a:visited {
+    text-decoration: none;
+    color:rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.menu-item a:hover {
+    cursor: pointer;
+    color:rgb(0, 140, 255);
+}
+
+.menu-item a:active {
+    text-decoration: none;
+    color:rgb(78, 78, 78);
+    font-weight: bold;
+}
+
+.hero-image {
+    position:relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/wolf-1341881_640.jpg);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+    text-align:center;
+    height:320px;
+}
+
+.hero-text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vw;
+    color:white;
+    text-shadow: 1px 3px 4px black; 
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.hero-text h1 span {
+    color:rgb(0, 140, 255);
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main-heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3% 0;
+}
+
+.underline {
+    position:relative;
+}
+
+.underline:after {
+    content:'';
+    position:absolute;
+    left:calc(50% - 30px);
+    bottom: -3px;
+    background-color: rgb(0, 140, 255);
+    width:60px;
+    height:3px;
+}
+
+.p-h-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/children-593313_640.jpg");
+}
+
+.p-h-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/keyboard-70506_640.jpg");
+}
+
+.p-h-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/apple-1851464_640.jpg");
+}
+
+.p-h-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/laptop-1483974_640.jpg");
+}
+
+.products {
+    font-size:0;
+}
+
+.products-hero {
+    position:relative;
+    height:300px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.products-hero-text {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color:white;
+    font-size: 3.5vw;
+    transition:.3s;
+}
+
+.products-hero:hover .products-hero-text {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.products-hero-text h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 5vw;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contact-text h4 {
+    text-transform: capitalize;
+    font-size: larger;
+    margin:5px;
+}
+
+.contact-icons {
+    font-size: 20px;
+}
+
+.contact-data {
+    color:black;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.contact-data:hover {
+    cursor:pointer;
+    color:rgb(0, 140, 255);
+}
+
+.contact-number {
+    margin:10px;
+}
+
+footer {
+    margin-top:20px;
+    height:60px;
+    background-image:linear-gradient(rgb(170, 169, 169),rgb(216, 216, 216)); 
+}
+
+footer p {
+    text-align: center;
+    line-height: 60px;
+    font-size:3.3vw;
+}
+
+.show {
+    transform: translateX(200px);
+}
+
+.hide {
+    display:none;
+}
